@@ -24,7 +24,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         // Define the Source Type from where we want to load the images
-        self.imagePicker.sourceType = .photoLibrary
+        self.imagePicker.sourceType = .camera
         self.imagePicker.delegate = self
     }
 
