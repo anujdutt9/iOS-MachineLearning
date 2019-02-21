@@ -14,3 +14,4 @@
 |  3.   | Live Image Classification | Live Image classification using real time camera video input to CoreML using Vision Framework. | Completed |
 |  4.   | Flower Classification | Classify different flowers using Caffee model. | Ongoing |
 |  5.   | Image to Location | Use a machine learning model to find coordinates of a place in the image and plot them on a map. | Ongoing |
+|  6.   | Handwritten Digit Classification | Use machine learning to classify digit drawn on the screen. | Ongoing  |
