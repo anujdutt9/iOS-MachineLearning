@@ -16,3 +16,4 @@
 |  5.   | Image to Location | Use a machine learning model to find coordinates of a place in the image and plot them on a map. | Ongoing |
 |  6.   | Handwritten Digit Classification | Use machine learning to classify digit drawn on the screen. | Ongoing  |
 |  7.   | Name Origin Classification | Use a RNN to find people's name's origin language. | Ongoing |
+|  8.   | Kitchen Audio Scene Classification | Use the VGGish model to classify common Kitchen Audio. | Ongoing |
