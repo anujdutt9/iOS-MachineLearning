@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Utternace_Entity_Classifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rgp-Jz-zVw">
+                                <rect key="frame" x="16" y="130" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCc-dB-mpe">
+                                <rect key="frame" x="16" y="97" width="93" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-BY-tzK">
+                                <rect key="frame" x="150" y="187" width="58" height="37"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4V-c7-6GN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Predicted Intent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibO-Ct-0Gv">
+                                <rect key="frame" x="16" y="283" width="150" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yqu-Id-cZM">
+                                <rect key="frame" x="16" y="316" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction Accuracy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEQ-3O-ItW">
+                                <rect key="frame" x="16" y="400" width="189" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnu-ce-t4A">
+                                <rect key="frame" x="16" y="433" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VEQ-3O-ItW" firstAttribute="leading" secondItem="wnu-ce-t4A" secondAttribute="leading" id="0Gq-PE-ziF"/>
+                            <constraint firstItem="yqu-Id-cZM" firstAttribute="trailing" secondItem="wnu-ce-t4A" secondAttribute="trailing" id="2NJ-Qd-1hV"/>
+                            <constraint firstItem="wnu-ce-t4A" firstAttribute="top" secondItem="VEQ-3O-ItW" secondAttribute="bottom" constant="8" symbolic="YES" id="9Ue-Ny-8EB"/>
+                            <constraint firstItem="Rgp-Jz-zVw" firstAttribute="top" secondItem="mCc-dB-mpe" secondAttribute="bottom" constant="8" symbolic="YES" id="COW-f8-0Dh"/>
+                            <constraint firstItem="yqu-Id-cZM" firstAttribute="top" secondItem="ibO-Ct-0Gv" secondAttribute="bottom" constant="8" symbolic="YES" id="F82-Dj-dAv"/>
+                            <constraint firstItem="Rgp-Jz-zVw" firstAttribute="leading" secondItem="ibO-Ct-0Gv" secondAttribute="leading" id="HvQ-Ly-ClM"/>
+                            <constraint firstItem="yqu-Id-cZM" firstAttribute="leading" secondItem="VEQ-3O-ItW" secondAttribute="leading" id="LHr-Yl-eL8"/>
+                            <constraint firstItem="ibO-Ct-0Gv" firstAttribute="top" secondItem="UCw-BY-tzK" secondAttribute="bottom" constant="59" id="PcR-iD-1sA"/>
+                            <constraint firstItem="ibO-Ct-0Gv" firstAttribute="leading" secondItem="yqu-Id-cZM" secondAttribute="leading" id="STf-FC-vHi"/>
+                            <constraint firstItem="mCc-dB-mpe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="Wgl-Ef-2wQ"/>
+                            <constraint firstItem="Rgp-Jz-zVw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XB3-xz-srd"/>
+                            <constraint firstItem="VEQ-3O-ItW" firstAttribute="top" secondItem="yqu-Id-cZM" secondAttribute="bottom" constant="54" id="ebt-7e-5ge"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UCw-BY-tzK" secondAttribute="trailing" constant="167" id="fD6-Hh-Z3M"/>
+                            <constraint firstItem="Rgp-Jz-zVw" firstAttribute="trailing" secondItem="yqu-Id-cZM" secondAttribute="trailing" id="g7x-HP-DLJ"/>
+                            <constraint firstItem="mCc-dB-mpe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kqD-mZ-3E6"/>
+                            <constraint firstItem="mCc-dB-mpe" firstAttribute="leading" secondItem="Rgp-Jz-zVw" secondAttribute="leading" id="mYt-VG-EXZ"/>
+                            <constraint firstItem="UCw-BY-tzK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="vDa-LG-Ewc"/>
+                            <constraint firstItem="UCw-BY-tzK" firstAttribute="top" secondItem="Rgp-Jz-zVw" secondAttribute="bottom" constant="27" id="wEI-Xt-213"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="Rgp-Jz-zVw" id="mvA-uW-77h"/>
+                        <outlet property="outputAccuracy" destination="wnu-ce-t4A" id="YpL-HA-evg"/>
+                        <outlet property="outputIntent" destination="yqu-Id-cZM" id="gEc-vT-RBF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
